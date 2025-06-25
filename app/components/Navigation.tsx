@@ -30,12 +30,12 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={` px-7 fixed top-[10px] left-[100px] right-[100px] z-50 transition-all duration-300 rounded-2xl bg-[#0f4c7536]  backdrop-blur-md shadow-lg`}
+      className={` px-7 fixed top-[10px] left-[10%] right-[10%] z-50 transition-all duration-300 rounded-2xl bg-[#0f4c7536]  backdrop-blur-md shadow-lg`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           <motion.div whileHover={{ scale: 1.05 }} className="text-2xl  font-bold text-primary cursor-pointer">
-            ES
+            E<span className="text-[#3282B8]">S</span>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -83,21 +83,23 @@ const Navigation = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white/95 dark:bg-dark-900/95 backdrop-blur-md border-t border-dark-200/20 dark:border-dark-700/30"
+            className="md:hidden bg-[#0f4c7536]border-t"
           >
-            <div className="container-custom py-4">
+            <div className="container-custom py-4" >
               {navItems.map((item, index) => (
-                <motion.a
+                <motion.div
                   key={item.href}
-                  href={item.href}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = item.href;
+                  }}
                   className="block py-3 text-dark-600 dark:text-dark-300 hover:text-primary transition-colors duration-300"
                 >
                   {item.label}
-                </motion.a>
+                </motion.div>
               ))}
             </div>
           </motion.div>

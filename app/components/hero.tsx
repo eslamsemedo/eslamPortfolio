@@ -5,9 +5,9 @@ import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50 dark:from-dark-900 dark:to-dark-800">
+    <section className="min-h-screen w-full flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Animated Background Blobs */}
-      <div className="absolute inset-0 overflow-hidden flex items-center justify-center">
+      {/* <div className="absolute inset-0 overflow-hidden flex items-center justify-center">
         <motion.div
           animate={{
             x: [0, 100, 0],
@@ -34,7 +34,7 @@ export default function Hero() {
           }}
           className="absolute  w-96 h-96 bg-[#bbe1fa88] rounded-full blur-3xl"
         />
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">

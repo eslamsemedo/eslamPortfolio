@@ -62,7 +62,7 @@ export default function Contact() {
     }));
   };
   return (
-    <section id="contact" className="py-20 bg-slate-50 dark:bg-dark-800" ref={ref}>
+    <section id="contact" className="py-20 w-full bg-slate-50 dark:bg-dark-800" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -116,8 +116,8 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 10 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 10 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">

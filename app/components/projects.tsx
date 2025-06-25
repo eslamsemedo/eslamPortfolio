@@ -60,7 +60,7 @@ export default function Projects() {
     activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-dark-900" ref={ref}>
+    <section id="projects" className="py-20 w-full bg-white dark:bg-dark-900" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

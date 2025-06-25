@@ -10,7 +10,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="about" className="py-20 bg-white dark:bg-dark-900" ref={ref}>
+    <section id="about" className="py-20 w-full bg-white dark:bg-dark-900" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -31,7 +31,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative w-full max-w-md mx-auto">
+            <div className="relative w-[90%] max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-[#0d3571] rounded-2xl transform rotate-6"></div>
               <Image
                 src="/eslam.jpg"
@@ -46,8 +46,8 @@ export default function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 10 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 10 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-6"
           >
