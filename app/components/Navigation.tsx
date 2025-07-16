@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Moon, Sun } from "lucide-react"
+import { Menu, X } from "lucide-react"
 // import { useTheme } from "./theme-provider"
 
 const Navigation = () => {
@@ -30,7 +30,7 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={` px-7 fixed top-[10px] left-[10%] right-[10%] z-50 transition-all duration-300 rounded-2xl bg-[#0f4c7536]  backdrop-blur-md shadow-lg`}
+      className={` px-7 fixed top-[10px] left-[10%] right-[10%] z-50 transition-all duration-300 rounded-2xl bg-[#0f4c7536]  backdrop-blur-sm shadow-lg`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">

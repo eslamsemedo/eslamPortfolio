@@ -54,6 +54,26 @@ export default function Projects() {
       github: "https://github.com/eslamsemedo/sensor_ozone",
       live: "https://sensor-ozone.vercel.app/",
     },
+    {
+      id: 5,
+      title: "MYSKY",
+      description: "Premium travel services including safari trips, sea adventures, hotel bookings, and guided tours across Egypt and beyond.",
+      image: "/projects/mysky.png",
+      tags: ["React", "Next.js", "TypeScript", "Node.js", "CSS", "Tailwind CSS", "Chadcn UI"],
+      category: "Open Source",
+      github: "https://github.com/eslamsemedo/travel-agency",
+      live: "https://mysky.blog/",
+    },
+    {
+      id: 6,
+      title: "SOLEX EDITING",
+      description: "Expert academic editing, peer review, plagiarism checks, and journal-ready formatting to help your manuscript get accepted",
+      image: "/projects/solex-editing.png",
+      tags: ["React", "Next.js", "TypeScript", "Node.js", "CSS", "Tailwind CSS", "Chadcn UI"],
+      category: "Open Source",
+      github: "https://github.com/eslamsemedo/solex-editing",
+      live: "https://www.solexediting.com/",
+    },
   ]
 
   const filteredProjects =
